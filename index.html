@@ -1,30 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sahas Rajput Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+slab:700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link rel="stylesheet" href="./style.css">
-    </head>
-<body>
-    <div class="wrapper">
-        <canvas id="stars"></canvas>
-        <canvas id="yahia"></canvas>
-        <div class="containner">
-        <div class="template color-yellow" data-template="Home">
-            <main>
-            <h1><span>An Aspiring
-                <mark>28 years
-            </mark>old</span>
-            <span>Fullstack Java Developer</span>
-        </h1>
-                <div class="P"><span>Sahas Rajput</span><span>+91-8446612757</span></div>
-                <div class="links">
-                <a class="link color-yellow" href="#" title="View my bucket list" target="_blank">View my bucket list</a>
-                <a class="link color-green" href="#" title="Tell me a secret" target="_blank">Tell me a secret</a>
-                <a class="link color red" href="#" title="Download my resume" target="_blank">Download my resume</a>
-            </div>
-            </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahas Rajput - Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom CSS */
+      .programming-icons {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-blue-500 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white font-bold text-lg">Sahas Rajput</a>
+        <button id="toggleMenu" class="text-white md:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <ul id="menu" class="hidden md:flex space-x-4">
+          <li><a href="#about" class="text-white">About</a></li>
+          <li><a href="#skills" class="text-white">Skills</a></li>
+          <li><a href="#experience" class="text-white">Experience</a></li>
+          <li><a href="#contact" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="bg-blue-700 text-white text-center py-20">
+      <div class="container mx-auto">
+        <h1 class="text-4xl font-bold">Sahas Rajput</h1>
+        <p class="mt-2 text-lg">Software Developer</p>
+        <p class="mt-2 text-lg">
+          <a href="www.linkedin.com/in/sahas-rajput" class="underline"
+            >www.linkedin.com/in/sahas-rajput</a
+          >
+          <br />
+          Pune, Maharashtra, India | (+91)-8446612757 | sahasrajput007@gmail.com
+        </p>
+      </div>
+    </header>
+
+    <section id="about" class="py-20">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Professional Summary</h2>
+        <p class="text-lg">
+          Results-driven professional with expertise in designing, implementing,
+          and maintaining robust software solutions. Proficient in Java, HTML,
+          CSS, JavaScript, React, Git, GitHub, Spring, Spring-boot, Restful
+          APIs, AWS, Bootstrap, SQL, etc. Committed to continuous learning,
+          adaptability, and creative problem-solving. Seeking to contribute
+          technical proficiency, innovation, and collaboration to a dynamic
+          software development team.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="bg-gray-200 py-20">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Technical Skills</h2>
+        <!-- List of technical skills here -->
+        <ul class="list-disc pl-4">
+          <li>
+            <span class="programming-icons">💻</span>Programming Languages: Java
+          </li>
+          <li>
+            <span class="programming-icons">🌐</span>Web Development: HTML, CSS,
+            JavaScript, React
+          </li>
+          <li>
+            <span class="programming-icons">📊</span>Database Management: SQL
+          </li>
+          <li>
+            <span class="programming-icons">📝</span>Version Control: Git,
+            GitHub
+          </li>
+          <li>
+            <span class="programming-icons">🛠️</span>Frameworks: Spring,
+            Spring-boot
+          </li>
+          <li>
+            <span class="programming-icons">📱</span>Front-end Libraries: React
+          </li>
+          <li>
+            <span class="programming-icons">🔗</span>Restful APIs: Design and
+            Implementation
+          </li>
+          <li><span class="programming-icons">☁️</span>Cloud Platforms: AWS</li>
+          <li>
+            <span class="programming-icons">🧪</span>Testing Frameworks: JUnit
+          </li>
+          <li>
+            <span class="programming-icons">💼</span>IDEs: IntelliJ IDEA,
+            Eclipse
+          </li>
+          <li>
+            <span class="programming-icons">📱</span>Responsive Design:
+            Bootstrap
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="py-20">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Work Experience</h2>
+        <!-- Work experience details here -->
+        <div class="mb-8">
+          <h3 class="text-xl font-bold">
+            Senior Business Associate | Tata Consultancy Services | January
+            2022- Present
+          </h3>
+          <p><strong>Role & Responsibilities:</strong></p>
+          <ul class="list-disc pl-4">
+            <li>
+              Led end-to-end development using Java, Spring, and Spring Boot for
+              robust server-side applications.
+            </li>
+            <li>
+              Implemented responsive user interfaces with HTML, CSS, JavaScript,
+              and React front-end libraries.
+            </li>
+            <li>
+              Designed and optimized SQL databases, ensuring efficient data
+              storage and retrieval.
+            </li>
+            <li>
+              Developed Restful APIs, emphasizing best practices for seamless
+              integration.
+            </li>
+            <li>
+              Utilized Git and GitHub for version control, ensuring a
+              streamlined and collaborative development environment.
+            </li>
+          </ul>
+          <p><strong>Achievements:</strong></p>
+          <ul class="list-disc pl-4">
+            <li>
+              Implemented optimization strategies resulting in a 15% improvement
+              in application response time, enhancing overall user satisfaction.
+            </li>
+            <li>
+              Streamlined AWS resources, leading to a 25% reduction in hosting
+              costs without compromising performance, directly impacting project
+              profitability.
+            </li>
+          </ul>
+        </div>
+        <!-- Repeat similar structure for other work experiences -->
+      </div>
+    </section>
+
+    <section id="contact" class="bg-gray-200 py-20">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+        <!-- Contact information here -->
+        <p class="text-lg">
+          Pune, Maharashtra, India <br />
+          (+91)-8446612757 <br />
+          sahasrajput007@gmail.com
+        </p>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-8">
+      <div class="container mx-auto">
+        <p>&copy; 2024 Sahas Rajput. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
